@@ -10,14 +10,29 @@
 <body>
  
     <button onclick="showMessage()">Нажми меня</button>
-    <div class="calculator"> 
-        <button onclick=" calcSum()">Сумма</button>
-        <button onclick=" calcSub()">Вычитание</button>
-        <button onclick=" calcMult()">Умножение</button>
-        <button onclick=" calcDiv()">Деление</button>
-    </div>   
 
-    
-    <script src="./index.js"></script> 
+    <form name="calculator"> 
+
+    <fieldset>
+       <label >Введите первое число <input type="number" id="argument1">
+       </label> <br>
+       <label>Введите второе число <input type="number" id="argument2">
+       </label>
+    </fieldset>
+
+    <fieldset>
+        <div> <input type="button" value="+" onclick="anssum()">
+            <input type="text" id="summa" value="" ></div>
+            <div><input type="button" value="-" onclick="anssub()">
+                <input type="text" id="sub" value="" ></div>
+            <div> <input type="button" value="*" onclick="ansmult()">
+                <input type="text" id="mult" value="" ></div>
+     
+        <div><input type="button" value="/" onclick="ansdiv()">
+          <input type="text" id="div" value="" ></div>
+    </fieldset>
+
+    </form>
+<script src="./index.js"></script> 
 </body>
 </html>
