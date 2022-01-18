@@ -6,6 +6,9 @@ let showMessage = () => {
 };
 
 
+
+/* Калькулятор */
+
 function anssum() {
     var a = document.getElementById('argument1').value;
     console.log(a);
@@ -51,3 +54,32 @@ function ansmult() {
     let mult = document.getElementById('mult').value = ansmult;
 
 }
+/* Задание с дивами */
+
+function ChangeMe ()
+{
+    let divs=document.querySelectorAll('#block>div');
+  console.log(divs);
+  divs[0].style.background="black";
+  divs[1].style.background="blue";
+  divs[2].style.background="red";
+  
+}
+
+
+/* Галерея */
+
+function RightArrow()
+{
+    let img=document.getElementById('img');
+    img.src="./img/rose.jpg";
+}
+
+function LeftArrow()
+{
+    let img=document.getElementById('img');
+    img.src="./img/Prince.jpg";
+}
+
+
+
