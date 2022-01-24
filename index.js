@@ -37,10 +37,11 @@ function ansdiv() {
     console.log(a);
     var b = document.getElementById('argument2').value;
     console.log(b);
-
+    if (b!=0){
     let ansdiv = Number(a) / Number(b);
     console.log(ansdiv);
-    let div = document.getElementById('div').value = ansdiv;
+    let div = document.getElementById('div').value = ansdiv;}
+    else { alert ("На 0 делить нельзя!");}
 }
 
 function ansmult() {
